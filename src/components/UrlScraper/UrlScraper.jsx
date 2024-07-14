@@ -13,6 +13,7 @@ export function UrlScraper() {
   const [filterDisplay, setFilterDisplay] = useState(false);
   const [resultsDisplay, setResultsDisplay] = useState(false);
 
+  // --------------------------------------------------------------------- Scrape handler
   const handleScrape = async () => {
     setLoading(true);
     setError(null);
@@ -30,6 +31,7 @@ export function UrlScraper() {
     }
   };
 
+  // --------------------------------------------------------------------- Filter functuions
   const filterByComments = () => {
     const filtered = data
       .filter(entry => entry.title.split(' ').length > 5)
