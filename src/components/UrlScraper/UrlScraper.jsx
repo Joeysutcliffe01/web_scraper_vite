@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Lottie from "lottie-react";
-import loadingAnimation from "../../assets/Animations/loading_animation.json";
+// import Lottie from "lottie-react";
+// import loadingAnimation from "../../assets/Animations/loading_animation.json";
 
 export function UrlScraper() {
   const [url, setUrl] = useState('https://news.ycombinator.com/');
@@ -67,7 +67,7 @@ export function UrlScraper() {
             <button className='searchbox_btn' onClick={handleScrape}>Scrape Data</button>
         </div>
       
-      {loading && <Lottie animationData={loadingAnimation} style={{ height: "10rem" }}/>}
+      {/* {loading && <Lottie animationData={loadingAnimation} style={{ height: "10rem" }}/>} */}
       {error && <p>Error: {error}</p>}
 
       <div className={resultsDisplay ?'results_container' : "displayNone"}>
