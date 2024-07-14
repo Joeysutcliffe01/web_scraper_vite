@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-// import Lottie from "lottie-react";
-// import loadingAnimation from "../../assets/Animations/loading_animation.json";
+import Lottie from "lottie-react";
+import loadingAnimation from "../../assets/Animations/loading_animation.json";
+import { FaFilter } from "react-icons/fa";
 
 export function UrlScraper() {
   const [url, setUrl] = useState('https://news.ycombinator.com/');
@@ -67,12 +68,12 @@ export function UrlScraper() {
             <button className='searchbox_btn' onClick={handleScrape}>Scrape Data</button>
         </div>
       
-      {/* {loading && <Lottie animationData={loadingAnimation} style={{ height: "10rem" }}/>} */}
+      {loading && <Lottie animationData={loadingAnimation} style={{ height: "10rem" }}/>}
       {error && <p>Error: {error}</p>}
 
       <div className={resultsDisplay ?'results_container' : "displayNone"}>
         <div className='results__filter_container'>
-            <button className='results__filter_btn' onClick={() => setFilterDisplay(prevCheck => !prevCheck)}>Filter</button>
+            <button className='results__filter_btn' onClick={() => setFilterDisplay(prevCheck => !prevCheck)}><span>{<FaFilter />}</span> Filter</button>
                 <div className={filterDisplay ? 'results_filter_options' : "displayNone"}>
                     <button onClick={filterByComments}>More than 5 words</button>
                     <button onClick={filterByPoints}>5 words or less</button>

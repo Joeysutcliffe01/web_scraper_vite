@@ -61,14 +61,28 @@ li
 
 .results__filter_container{
     position: absolute;
-    top: -1rem;
+    top: 0rem;
     right: 1rem;
 }
 
 .results__filter_btn{
     background-color: transparent;
     border: none;
+    transition: all .3s ease-in-out;
+    padding: .2rem;
+    border-radius: .2rem;
+    border: 1px solid rgba(255, 255, 255, 0);
     cursor: pointer;
+}
+.results__filter_btn span{
+ font-size: .7rem;
+}
+.results__filter_btn:hover{
+    background-color: rgba(248, 248, 248, 0.46);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .results_filter_options{
