@@ -1,8 +1,5 @@
-
-
 ### Frontend README (`my-react-app/README.md`)
 
-```markdown
 # Web Scraper Frontend
 
 This frontend application allows users to input a URL and scrape data from it.
