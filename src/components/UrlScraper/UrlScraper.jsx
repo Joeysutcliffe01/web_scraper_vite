@@ -19,7 +19,7 @@ export function UrlScraper() {
     setError(null);
 
     try {
-      const response = await axios.get('http://localhost:3001/scrape', { params: { url } });
+      const response = await axios.get('https://web-scraper-vite-backend-2.onrender.com/scrape', { params: { url } });
       console.log("response:", response);
       setData(response.data);
       setFilteredData(response.data);

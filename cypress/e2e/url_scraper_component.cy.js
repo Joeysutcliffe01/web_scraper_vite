@@ -11,7 +11,7 @@ describe('Test for scraper component', () => {
 
   it('should have url already in the input field', () => {
 
-      // Make sure default url is correct
+      // Make sure the default url is correct
       cy.get('[data-testid="searchbox-input-field"]').should("exist").should("have.value", "https://news.ycombinator.com/")
 
   })
@@ -41,6 +41,7 @@ describe('Test for scraper component', () => {
 
     // Check the comments order
     cy.get('ul > li').then(items => {
+
       if (items.length >= 2) {
         const firstComments = parseInt(items[0].querySelector('[data-testid="comments"]').textContent.split(': ')[1]);
         const secondComments = parseInt(items[1].querySelector('[data-testid="comments"]').textContent.split(': ')[1]);
@@ -54,6 +55,7 @@ describe('Test for scraper component', () => {
   });
 
   it('should filter data by points and ensure first li points are greater than the second li points', () => {
+
     // Click the scrape button to fetch data
     cy.get('[data-testid="searchbox-btn"]').click();
 
