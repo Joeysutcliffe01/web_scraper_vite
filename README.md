@@ -1,4 +1,4 @@
-### Frontend README (`my-react-app/README.md`)
+### Frontend README
 
 # Web Scraper Frontend
 
