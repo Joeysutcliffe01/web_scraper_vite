@@ -36,7 +36,7 @@ Once the data has loaded, you can filter the options.
    git clone https://github.com/yourusername/web-scraper.git
    cd web-scraper
 
-  **Install**:
-   npm i
-   npm i axios
-   npm run dev
+  **Run**:
+   - npm i
+   - npm i axios
+   - npm run dev
