@@ -40,3 +40,9 @@ Once the data has loaded, you can filter the options.
    - npm i
    - npm i axios
    - npm run dev
+
+  **Run cypress test**
+  - npx cypress open
+    - Navagate to E2E Testing
+    - Click browser option and click the Start E2E testing btn
+     - Select the test "url_scraper_component.cy.js"
