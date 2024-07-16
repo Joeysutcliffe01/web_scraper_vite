@@ -24,6 +24,7 @@ Once the data has loaded, you can filter the options.
 ## Technologies Used
 - Vite
 - Axios
+- Cypress
 
 ### Prerequisites
 
@@ -39,6 +40,7 @@ Once the data has loaded, you can filter the options.
   **Run**:
    - npm i
    - npm i axios
+   - npm i cypress
    - npm run dev
 
   **Run cypress test**
